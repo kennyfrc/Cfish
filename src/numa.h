@@ -4,7 +4,7 @@
 
 #ifdef NUMA
 #ifndef _WIN32
-#include <numa.h>
+#include "numa.h"
 #else
 #include <windows.h>
 #endif

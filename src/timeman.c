@@ -36,7 +36,7 @@ void time_init(Color us, int ply)
 {
   int moveOverhead    = option_value(OPT_MOVE_OVERHEAD);
   int slowMover       = option_value(OPT_SLOW_MOVER);
-  int npmsec          = option_value(OPT_NODES_TIME);
+  float npmsec        = (float)(option_value(OPT_NODES_TIME))/(float)(1000.0);
 
   // optScale is a percentage of available time to use for the current move.
   // maxScale is a multiplier applied to optimumTime.
@@ -48,7 +48,7 @@ void time_init(Color us, int ply)
   // the real engine speed to avoid time losses.
   if (npmsec) {
     if (!Time.availableNodes) // Only once at game start
-      Time.availableNodes = npmsec * Limits.time[us]; // Time is in msec
+      Time.availableNodes = (int64_t)(npmsec * Limits.time[us]); // Time is in msec
 
     // Convert from millisecs to nodes
     Limits.time[us] = (int)Time.availableNodes;

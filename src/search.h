@@ -55,9 +55,9 @@ typedef struct RootMoves RootMoves;
 /// if we have to ponder while it's our opponent's turn to move.
 
 struct LimitsType {
-  int time[2];
-  int inc[2];
-  int npmsec;
+  float time[2];
+  float inc[2];
+  float npmsec;
   int movestogo;
   int depth;
   int movetime;
