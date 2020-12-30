@@ -1,3 +1,18 @@
+# Cfish with 1200, 1500, and 2300 nets
+
+To build binaries with 1200, 1500, and 2300 nets, go to these branches:
+* elo1200
+* elo1500
+* elo2300
+
+These come with an automatic download of the latest nets I've made with a fixed nps of 50,000.
+
+To build this correctly, make sure you use `nnue=yes` and `pure=yes` as options.
+
+You may find the latest network releases here as well: https://github.com/kennyfrc/nnue-networks/releases
+
+---
+
 # Cfish
 This is a C port of Stockfish.
 
