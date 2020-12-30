@@ -28,7 +28,7 @@ ifeq ($(KERNEL),Linux)
 endif
 
 ### Executable name
-EXE = cfish1600
+EXE = cfish2300
 
 ### Installation dir definitions
 PREFIX = /usr/local
@@ -876,7 +876,7 @@ clean: objclean profileclean
 	@rm -f .depend core
 
 net:
-	$(eval nnuenet := "lichess1600-20201230-0908.bin")
+	$(eval nnuenet := "kb2300-20201230-0906.bin")
 	@echo "Default net: $(nnuenet)"
 	$(eval nnuedownloadurl := https://github.com/kennyfrc/nnue-networks/releases/download/early-release/$(nnuenet))
 	$(eval curl_or_wget := $(shell if hash curl 2>/dev/null; then echo "curl -skL"; elif hash wget 2>/dev/null; then echo "wget -qO-"; fi))
