@@ -650,7 +650,7 @@ void nnue_init(void)
          , evalFile
 #else
          "info string ERROR: The default net can be downloaded from:\n"
-         "info string ERROR: https://tests.stockfishchess.org/api/nn/%s\n",
+         "info string ERROR: https://github.com/kennyfrc/nnue-networks/releases/download/latest/%s\n",
          evalFile, option_default_string_value(OPT_EVAL_FILE)
 #endif
          );

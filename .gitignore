@@ -10,3 +10,4 @@
 cfish*
 TODO
 .DS_Store
+src/*.bin
