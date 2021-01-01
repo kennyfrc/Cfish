@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-#define DefaultEvalFile "lichess1600-20201230-0908.bin"
+#define DefaultEvalFile "kb2300-20201231-2057.bin"
 
 enum { Tempo = 28 };
 
