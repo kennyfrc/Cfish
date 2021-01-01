@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-#define DefaultEvalFile "kb2300-20201230-0906.bin"
+#define DefaultEvalFile "evil-morty-0.1a.bin"
 
 enum { Tempo = 28 };
 
