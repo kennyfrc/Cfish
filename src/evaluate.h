@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-#define DefaultEvalFile "kb2300-20201231-1147.bin"
+#define DefaultEvalFile "nn-maia-0208-v3-i14.bin"
 
 enum { Tempo = 28 };
 

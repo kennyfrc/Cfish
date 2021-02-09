@@ -114,7 +114,7 @@ static Option optionsMap[] = {
   { "Skill Level", OPT_TYPE_SPIN, 20, 0, 20, NULL, NULL, 0, NULL },
   { "Move Overhead", OPT_TYPE_SPIN, 10, 0, 5000, NULL, NULL, 0, NULL },
   { "Slow Mover", OPT_TYPE_SPIN, 100, 10, 1000, NULL, NULL, 0, NULL },
-  { "nodestime", OPT_TYPE_SPIN, 100, 0, 10000000, NULL, NULL, 0, NULL },
+  { "nodestime", OPT_TYPE_SPIN, 1000, 0, 10000000, NULL, NULL, 0, NULL },
   { "UCI_AnalyseMode", OPT_TYPE_CHECK, 0, 0, 0, NULL, NULL, 0, NULL },
   { "UCI_Chess960", OPT_TYPE_CHECK, 0, 0, 0, NULL, NULL, 0, NULL },
   { "SyzygyPath", OPT_TYPE_STRING, 0, 0, 0, "<empty>", on_tb_path, 0, NULL },
